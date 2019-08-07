@@ -1,9 +1,8 @@
 import com.duck.*;
-import weapons.*;
-import weapons.Character;
-import java.util.ArrayList;
-import java.util.List;
+import com.fighters.*;
+import com.fighters.Character;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main {

@@ -1,4 +1,4 @@
-package weapons;
+package com.fighters;
 
 public class KnifeBehavior implements IWeaponBehavior {
     @Override

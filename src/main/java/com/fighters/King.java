@@ -1,4 +1,4 @@
-package weapons;
+package com.fighters;
 
 public class King extends Character{
     public King() {
