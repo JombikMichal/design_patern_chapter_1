@@ -44,7 +44,7 @@ public class Main {
         // zaroven mame dve rozhraia (IFlyable a IQuackable), ktore sme implementovali tam kde ich logicky potrebujeme
 
         // toto riesenie nie je najstastnejsie lebo piseme jednak duplicitny kod a jednak pokial by sme mali viac ako 2 classy ktore to implementuju, napr. 100 tak pri zmene logiky tejto
-        // metody by som sa asi rozplakal ale clovek ktory by to po mne robil tak by ma nakopal
+        // metody by som sa asi rozplakal alebo clovek ktory by to po mne robil tak by ma nakopal
 
         // The one constant in software development: CHANGE!
 
@@ -84,6 +84,8 @@ public class Main {
 
 
 
+        
+
         List<Character> fighters = new ArrayList<>();
         fighters.add(new King());
         fighters.add(new Queen());
@@ -91,6 +93,9 @@ public class Main {
         fighters.add(new Knight());
 
         for (int i = 0; i < fighters.size(); i++) {
+            if(fighters.get(i) instanceof King){
+                fighters.get(i).setiWeaponBehavior(new AxeBehavior());
+            }
             fighters.get(i).fight();
         }
 
